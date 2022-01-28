@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title>minor_project</title>
+</head>
+<style>
+  .pic {
+    opacity: 1;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .d-none {
+    display: block !important;
+  }
+
+  .container {
+    max-width: 96%;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 8%;
+    bottom: 2rem;
+    left: 8%;
+  }
+
+  .fnt {
+    font-size: 1.5rem;
+  }
+
+  .topnav {
+    padding: 2vh 0vw;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .d-flex {
+      width: 50vw;
+    }
+  }
+
+
+
+  @media only screen and (min-width: 1231px) {
+    .bx1 {
+      height: 32vh;
+      width: 100%;
+    }
+
+    .my-4 {
+      margin-left: auto;
+    }
+
+    .photo {
+      height: 100%;
+      width: 100%;
+    }
+
+    .fnt {
+      font-size: 4rem;
+    }
+
+
+  }
+
+
+  @media only screen and (min-width: 1092px) and (max-width:1230px) {
+    .bx1 {
+      height: 38vh;
+      width: 100%;
+    }
+
+    .my-4 {
+      margin-left: auto;
+    }
+
+    .photo {
+      height: 100%;
+      width: 100%;
+    }
+
+    .fnt {
+      font-size: 4rem;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 872px) and (max-width: 1091px) {
+
+    .bx1 {
+      height: 53vh;
+    }
+
+    .col {
+      flex: none;
+    }
+
+    .photo {
+      width: 100%;
+    }
+
+    .col-auto {
+      width: 84%;
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 5%;
+    }
+
+    .fnt {
+      font-size: 4rem;
+      padding-top: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 650px) and (max-width: 871px) {
+    .bx1 {
+      height: 60vh;
+    }
+
+    .col {
+      flex: none;
+    }
+
+    .photo {
+      width: 100%;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    .col-auto {
+      width: 84%;
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 5%;
+    }
+
+    .fnt {
+      font-size: 3.5rem;
+    }
+
+    .carousel-caption {
+      bottom: 1.4rem;
+    }
+  }
+
+  @media only screen and (min-width: 546px) and (max-width: 649px) {
+    .photo {
+      height: 88%;
+    }
+
+    .bx1 {
+      height: 33vh;
+    }
+
+    .col-auto {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    .fnt {
+      font-size: 2.7rem;
+    }
+  }
+
+  @media only screen and (min-width:390px) and (max-width: 545px) {
+    .bx1 {
+      height: 53vh;
+    }
+
+    .col {
+      flex: none;
+    }
+
+    .photo {
+      width: 100%;
+    }
+
+    .col-auto {
+      width: 84%;
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 5%;
+    }
+
+    .fnt {
+      font-size: 2.7rem;
+    }
+
+    .pic {
+      height: 42vh;
+    }
+
+    .carousel-caption {
+      bottom: 3.3rem;
+    }
+  }
+
+  @media only screen and (max-width:390px) {
+    .col {
+      flex: none;
+    }
+
+    .photo {
+      width: 100%;
+    }
+
+    .col-auto {
+      width: 84%;
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 5%;
+    }
+
+    .fnt {
+      font-size: 2.7rem;
+    }
+
+    .pic {
+      height: 42vh;
+    }
+
+    .carousel-caption {
+      bottom: 2rem;
+    }
+  }
+
+  @media only screen and (max-width:280px) {
+    .fnt {
+      font-size: 2rem;
+    }
+  }
+
+  @media only screen and (min-height:570px) and (max-height:750px) and (min-width:728px) {
+    .carousel-caption {
+      bottom: 1rem;
+    }
+
+    .pic {
+      height: 36vh;
+    }
+
+    .bx1 {
+      height: 95%;
+    }
+
+  }
+
+  @media only screen and (min-height:570px) and (max-height:750px) and (min-width:500px) and (max-width:727px) {
+    .carousel-caption {
+      bottom: 0rem;
+    }
+
+    .pic {
+      height: 42vh;
+    }
+
+    .bx1 {
+      height: 94%;
+    }
+
+    .fnt {
+      font-size: 3rem
+    }
+  }
+
+  @media only screen and (min-height:570px) and (max-height:750px) and (min-width:250px) and (max-width:499px) {
+    .carousel-caption {
+      bottom: 0rem;
+    }
+
+    .pic {
+      height: 47vh;
+    }
+
+    .bx1 {
+      height: 94%;
+    }
+
+    .fnt {
+      font-size: 2.6rem;
+    }
+
+  }
+
+  @media only screen and (max-height:570px) and (max-width:500px) {
+    .carousel-caption {
+      bottom: 0rem;
+    }
+
+    .pic {
+      height: 52vh;
+    }
+
+    .bx1 {
+      height: 94%;
+    }
+
+    .fnt {
+      font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-height:570px) and (min-width:501px) {
+    .pic {
+      height: 51vh;
+    }
+
+    .bx1 {
+      height: 94%;
+    }
+
+    .fnt {
+      font-size: 3.2rem;
+    }
+  }
+
+  .txtd {
+    text-decoration: none !important;
+    color: black;
+  }
+
+  .intro {
+
+    margin: 3.2rem 3.2rem;
+  }
+
+  .caropt{
+    color: rgb(14, 15, 14);
+    text-decoration: none;
+  }
+
+  
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark topnav">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <h3> <i>CareerPath</i></h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Topics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/exam">exam section</a>
+              <a class="dropdown-item" href="/college">college cection</a>
+
+              <a class="dropdown-item" href="/job">job section</a>
+            </div>
+
+          </li>
+
+
+        </ul>
+        <form class="d-flex" action="/college/engineering" method="post">
+          <input class="form-control me-2" type="search" name="col_name" placeholder="Search" aria-label="Search">
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <button type="submit" class="btn btn-secondary" name="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="pic" src="comp2.jpeg" alt="...">
+        <div class="carousel-caption d-none d-md-block dv">
+          <h1 class="fnt"><i><strong>Welcome to CareerPath</strong></i></h1>
+          <p style="font-size:20px;"> to walk on a path,first know all the things about it </p>
+          <a href="/exam"> <button class="btn btn-primary"> Admission </button></a> 
+          <!-- <button class="btn btn-danger"> News </button> -->
+         <a href="https://www.nirfindia.org/2021/EngineeringRanking.html" target="blank"> <button class="btn btn-success"> Rankings </button></a>
+          
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="intro">
+      <h2>Career Options after 12th: </h2>
+      <p>
+        Selecting a good career opportunity after 12th is a nerve-racking task. The career should be of their interest
+        areas and it should also fetch a handsome salary. Students pursue their 12th standard in different streams
+        namely Science, Commerce, and Humanities based on the career fields attract them the most. However, it is
+        imperative to do comprehensive research on career options after 12th available in their domains which align with
+        their interests too. We have listed down various career options available in different streams to pursue a
+        bright start to your career.
+      </p>
+      <div class="d-grid gap-2">
+        <button class="btn btn-light" type="button">
+          <a class="caropt" href="/careerinarts">
+            <h3 class="caropt">Career Options in Arts</h3>
+          </a>
+        </button>
+
+
+        <button class="btn btn-light" type="button">
+          <a class="caropt" href="/careerinscience">
+            <h3 class="caropt">Career Options in Science</h3>
+          </a>
+        </button>
+
+        <button class="btn btn-light" type="button">
+          <a class="caropt" href="/careerincommerce">
+            <h3 class="caropt">Career Options in Commerce</h3>
+            </a>
+        </button>
+        
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="container my-4 ">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <a class="txtd" href="/exam">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bx1">
+
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary"></strong> -->
+                <h2 class="mb-0">All stream Exams</h2>
+               <br>
+                <p class="mb-auto">includes all stream exams after class 12th i.e. egineering,medical,arts and commerce
+                  with a brief explanation of eligibility crteria,syllabus,topic weightage,preperation tips,study
+                  material...etc.</p>
+
+              </div>
+
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img photo" width="200" height="200" src="exam.jpeg" alt="">
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a class="txtd" href="/college">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bx1">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
+                <h2 class="mb-0">Colleges and Universities</h2>
+                <br>
+                <p class="mb-auto"> in this section you will get all the relevent informations about top Colleges and
+                  Universities according to respective streams and entrance exams you will also get information previous
+                  year cutoffs and merit list</p>
+
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img photo" width="200" height="200" src="clg.jpeg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4 ">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <a class="txtd" href="/job">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bx1">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary"></strong> -->
+                <h2 class="mb-0">Goverment Jobs</h2>
+                <br>
+                <p class="card-text mb-auto"> apart from studies you can also get some govermen jobs <br>we have
+                  included
+                  all jobs just after class 12th, and detailed information about their exams i.e. NDA,SSC(chsl),indian
+                  army..etc </p>
+
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img photo" width="200" height="200" src="job.jpeg" alt="">
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a class="txtd" href="#">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bx1">
+              <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
+                <h2 class="mb-0">Other Tools</h2>
+                <br>
+                <p class="mb-auto"> it includes college predicter </p>
+
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img photo" width="200" height="200" src="tools.jpeg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

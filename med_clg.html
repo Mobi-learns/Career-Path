@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<style>
+  #mnav {
+    padding: 34px 12px;
+    background-color: rgb(61 50 78 / 87%)!important;
+    opacity: 1;
+
+  }
+
+  @media only screen and (min-width: 992px) {
+    .d-flex {
+      width: 50vw;
+    }
+  }
+
+  #srch {
+    width: 40vw;
+  }
+
+  @media only screen and (max-width:600px) {
+    .d-flex {
+      padding: 15px 0px;
+      /* width: 70vw; */
+    }
+
+    #srch {
+      width: 60vw;
+    }
+
+    #mnav {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width:989px) {
+    #srch {
+      width: 60vw;
+    }
+  }
+
+  @media only screen and (min-width: 990px) {
+    #srch {
+      width: 60vw;
+    }
+  }
+
+  /* .dropdown-item {
+    /* color: white; */
+  /* } */ 
+
+  #navbarDropdownMenuLink {
+    color: white;
+    font-weight: bold;
+  }
+
+  #pricing {
+    color: white;
+    font-weight: bold;
+  }
+
+  #home {
+    color: white;
+    font-weight: bold;
+  }
+
+  #butt {
+    border: 2px solid rgb(218, 213, 213);
+    background-color: grey;
+    color: white;
+  }
+
+  .navbar-toggler {
+    /* border:4px solid black; */
+    background-color: white;
+  }
+
+  .iit {
+    height: 20vw;
+  }
+
+  .divup {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 2vw;
+    margin-right: -2vw;
+  }
+
+  .tc {
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: underline;
+    color: rgb(21, 52, 110);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .drop {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  .dropm {
+    /* border: 2px solid black; */
+    background-color: transparent;
+    padding: 0px;
+    /* border-radius: 10px; */
+  }
+
+  @media only screen and (min-width: 900px) {
+
+    .crd {
+      width: 32%;
+    }
+    
+  }
+
+  @media only screen and (min-width: 500px) and (max-width:899px) {
+
+    .crd {
+      width: 50%;
+    }
+
+    .divup {
+      margin-right: 3vw;
+    }
+  }
+
+  @media only screen and (max-width: 499px) {
+    .crd {
+      width: 100%;
+    }
+
+    .divup {
+      margin-right: 2vw;
+      margin-left: 1vw;
+    }
+
+    .iit {
+      height: 30vw;
+    }
+  }
+</style>
+
+
+<body>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+<!-- 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mnav">
+    <div class="container-fluid" id="mdiv">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="home" aria-current="page" href="#">HOME</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              COLLEGES
+            </a>
+            <ul class="dropdown-menu dropm" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item drop" href="#">AIIMS</a></li>
+              <li><a class="dropdown-item drop" href="#">Ohter Government colleges</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" id="srch" type="search" placeholder="Search for college" aria-label="Search">
+        <button type="button" class="btn btn-secondary">Search</button>
+      </form>
+    </div>
+  </nav> -->
+
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark topnav">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <h3> <i>CareerPath</i></h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Topics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/exam">exam section</a>
+              <a class="dropdown-item" href="/college">college cection</a>
+
+              <a class="dropdown-item" href="/job">job section</a>
+            </div>
+
+          </li>
+
+
+        </ul>
+        <form class="d-flex" action="/college/engineering" method="post">
+          <input class="form-control me-2" type="search" name="col_name" placeholder="Search" aria-label="Search">
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <button type="submit" class="btn btn-secondary" name="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h2 class="tc">TOP MEDICAL COLLEGES</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4 divup">
+    <div class="col crd">
+      <div class="card">
+        <img class="iit" src="aiimsd.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">AIIMS DELHI</h5>
+          <a class="btn btn-success" href="#" role="button">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col crd">
+      <div class="card">
+        <img class="iit" src="jnmc.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JNMC ALIGARH</h5>
+          <a class="btn btn-success" href="#" role="button">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col crd">
+      <div class="card">
+        <img class="iit" src="imsbhu.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IMS-BHU VARANASI</h5>
+          <a class="btn btn-success" href="#" role="button">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col crd">
+      <div class="card">
+        <img class="iit" src="bmcri.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BMCRI BANGALORE</h5>
+          <a class="btn btn-success" href="#" role="button">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col crd">
+      <div class="card">
+        <img class="iit" src="mamcd.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MAMC DELHI</h5>
+          <a class="btn btn-success" href="#" role="button">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col crd">
+      <div class="card">
+        <img class="iit" src="gmc.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GMC MUMBAI</h5>
+          <a class="btn btn-success" href="#" role="button">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
