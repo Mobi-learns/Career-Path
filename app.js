@@ -1,11 +1,12 @@
 const express = require("express");
 const ejs = require("ejs");
+require('dotenv').config();
 
 
 
 const mongoose=require("mongoose")
 
-mongoose.connect('mongodb+srv://admin-mohdshahab:SABU%40kv2@cluster0.bmgof.mongodb.net/CollegeDB?retryWrites=true&w=majority', {useNewUrlParser:true});
+mongoose.connect("mongodb+srv://admin-mohdshahab:" + process.env.PASSWORD + "@cluster0.bmgof.mongodb.net/CollegeDB?retryWrites=true&w=majority", { useNewUrlParser: true });
 
 const app = express();
 
