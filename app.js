@@ -15,7 +15,6 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 const collegeSchema= new mongoose.Schema ({
-    _id:Number,
     college_name:String,
     full_name:String,
     also_known_as:String,
@@ -165,7 +164,6 @@ const collegeSchema= new mongoose.Schema ({
  const College=mongoose.model("College",collegeSchema);
 
  const iitkgp=new College({
-    _id:1,
     college_name:"IIT KHARAGPUR",
     full_name:"INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR",
     also_known_as:"IIT-KGP",
@@ -343,7 +341,6 @@ const collegeSchema= new mongoose.Schema ({
 });
 
 const iitdli=new College({
-    _id:2,
     college_name:"IIT DELHI",
     full_name:"INDIAN INSTITUTE OF TECHNOLOGY DELHI",
     also_known_as:"IITD",
@@ -521,7 +518,6 @@ const iitdli=new College({
 });
 
 const iitb=new College({
-    _id:3,
     college_name:"IIT BOMBAY",
     full_name:"INDIAN INSTITUTE OF TECHNOLOGY BOMBAY",
     also_known_as:"IITB",
@@ -699,7 +695,6 @@ const iitb=new College({
 });
 
 const nita=new College({
-    _id:4,
     college_name:"MNNIT ALLAHABAD",
     full_name:"Motilal Nehru National Institute of Technology Allahabad",
     also_known_as:"MNNIT",
@@ -877,7 +872,6 @@ const nita=new College({
 });
 
 const nitk=new College({
-    _id:5,
     college_name:"NITK SURATHKAL",
     full_name:"National Institute of Technology Karnataka Surathkal",
     also_known_as:"NITK",
@@ -1055,7 +1049,6 @@ const nitk=new College({
 });
 
 const bitsp=new College({
-    _id:6,
     college_name:"BITS PILANI",
     full_name:"Birla Institute of Technology and Science Pilani",
     also_known_as:"BITS Pilani",
@@ -1233,7 +1226,6 @@ const bitsp=new College({
 });
 
 const zhcet=new College({
-    _id:7,
     college_name:"ZHCET ALIGARH",
     full_name:"ZAKIR HUSSAIN COLLEGE OF ENGINEERING AND TECHNOLOGY ALIGARH",
     also_known_as:"ZHCET",
